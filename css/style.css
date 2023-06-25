@@ -1,0 +1,216 @@
+/*
+    Project: skadoot.github.io
+    Author: skadoot (Tyler Lewis)
+    Description: Primary CSS styling for the project
+    Last Updated: 25/06/2023
+*/
+
+/* Layout used for the file (seperated for easy copy-paste): */
+/* element { */
+    /* Positioning: */
+
+    /* Box model: */
+
+    /* Typography: */
+
+    /* Visual: */
+
+    /* Layout: */
+
+    /* Other: */
+/* } */
+
+:root {
+    /* Colours */
+    --background: #1B1A1B;
+    --soft: #D3D6D8;
+    --strong: #E13F57;
+
+    /* Fonts */
+    --font-heading: 'Poppins', 'Arial', sans-serif;
+    --font-body: 'Hind', 'Times New Roman', serif;
+}
+
+body.index {
+    --strong: #E13F57;
+}
+
+body.odysseus {
+    --strong: #30A7A4;
+}
+
+body.projects {
+    --strong: #C75A2E;
+}
+
+body.about {
+    --strong: #BF8A3A;
+}
+
+/* Set the universal font for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600; /* 600 = Semi-bold */
+    color: var(--soft);
+}
+
+/* Set the universal font for generic text */
+p, span {
+    font-family: var(--font-body);
+    font-weight: 400; /* 400 = Normal */
+    color: var(--soft);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--background);
+    
+    overflow: hidden;
+}
+
+header {    
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+
+    justify-content: center;
+    align-items: center;
+    
+    user-select: none;
+}
+
+header h1 {
+    display: flex;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    
+    color: var(--soft);
+    
+    font-size: 1.5em;
+
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.5s;
+}
+
+header h1 i {
+    padding-right: 5px;
+    
+    color: var(--strong);
+    
+    transition: 0.5s;
+}
+
+header h1:hover {
+    color: var(--strong);
+    
+    cursor: default;
+}
+
+header h1:hover i {
+    color: var(--soft);
+}
+
+header nav {
+    display: flex;
+    height: 10vh;
+    
+    flex-grow: 8;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    display: flex;
+    height: 10vh;
+    
+    text-decoration: none;
+    
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a span {
+    font-size: 1.2em;
+    
+    transition: 0.5s;
+}
+
+header nav a:hover span {
+    color: var(--strong);
+}
+
+section {
+    display: flex;
+    width: 90vw;
+    min-height: 70vh;
+    margin: 5vh 5vw;
+}
+
+article {
+    flex: 1;
+}
+
+aside {
+    flex: 1;
+}
+
+aside img {
+    width: 100%;
+
+    user-select: none;
+}
+
+footer {
+    display: flex;
+    height: 10vh;
+    margin: 0 2em;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    display: flex;
+    height: 5vh;
+    
+    flex: 1;
+    align-items: center;
+    
+    cursor: default;
+    user-select: none; /* Disable user selection (highlighting) */
+}
+
+/* All links in footer */
+footer span a {
+    text-decoration: none;
+    color: var(--soft);
+    
+    transition: 0.5s; /* Set transition for hover effect */
+}
+
+#email:hover::after {
+    content: "Email";
+    margin-left: 0.5em;
+}
+
+#github:hover::after {
+    content: "GitHub";
+    margin-left: 0.5em;
+}
+
+#linkedin:hover::after {
+    content: "LinkedIn";
+    margin-left: 0.5em;
+}
+
+/* Space out the footer icons */
+footer span i {
+    margin-left: 1em;
+}
