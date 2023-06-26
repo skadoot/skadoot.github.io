@@ -2,7 +2,7 @@
     Project: skadoot.github.io
     Author: skadoot (Tyler Lewis)
     Description: Primary CSS styling for the project
-    Last Updated: 25/06/2023
+    Last Updated: 26/06/2023
 */
 
 /* Layout used for the file (seperated for easy copy-paste): */
@@ -155,6 +155,11 @@ section {
 
 article {
     flex: 1;
+}
+
+article a {
+    color: var(--strong);
+    text-decoration: none;
 }
 
 aside {
