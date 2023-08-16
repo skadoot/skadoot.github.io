@@ -79,7 +79,6 @@ fabric.properties
 
 # Custom ignores for this project
 /css/normalize.css
-/images/000019.JPG
 /.idea/discord.xml
 /.idea/jsLibraryMappings.xml
 /.idea/modules.xml
